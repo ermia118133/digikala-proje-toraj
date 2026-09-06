@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+  color: #3f3f46;
+  font-family: "Vazirmatn", "IRANSans", Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  max-width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #3f3f46 !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ef394e !important;
+}
+
+/* موبایل */
+@media (max-width: 639px) {
+  body {
+    font-size: 12px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 12px !important;
+  }
+
+  .swiper-pagination {
+    bottom: 5px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+  }
+
+
+  .swiper-slide {
+    min-width: 0;
+  }
+}
+
+/* تبلت */
+@media (min-width: 640px) and (max-width: 1023px) {
+  body {
+    font-size: 13px;
+  }
+
+  .swiper-slide {
+    min-width: 0;
+  }
+}
+
+/* لپ‌تاپ */
+@media (min-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 15px;
+  }
+}
