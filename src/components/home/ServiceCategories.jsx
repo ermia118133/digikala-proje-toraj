@@ -4,7 +4,7 @@ function ServiceCategories() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("/db.json")
+    fetch(`${import.meta.env.BASE_URL}db.json`)
       .then((res) => res.json())
       .then((data) => {
         setItems(data.modalService || []);

@@ -12,7 +12,7 @@ export default function AmazingProducts() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/db.json")
+    fetch(`${import.meta.env.BASE_URL}db.json`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data.amazingmobile || []);

@@ -27,7 +27,7 @@ export default function AdBanners() {
   const [banners, setBanners] = useState([]);
 
   useEffect(() => {
-    fetch("/db.json")
+    fetch(`${import.meta.env.BASE_URL}db.json`)
       .then((res) => res.json())
       .then((data) => {
         setBanners(data.ads2 || []);
