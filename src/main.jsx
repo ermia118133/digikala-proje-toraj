@@ -10,7 +10,7 @@ import "./App.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/digikala-proje-toraj">
         <App />
       </BrowserRouter>
     </Provider>
